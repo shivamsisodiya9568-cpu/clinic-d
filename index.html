@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GS Clinic - Comprehensive Healthcare in Agra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Preloader Animation -->
+    <div id="preloader"></div>
+
+    <!-- Sticky Navbar -->
+    <header id="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="#home">
+                        <img src="images/logo.png" alt="GS Clinic Logo"> <!-- Ensure logo.png is in your images folder -->
+                    </a>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#doctors">Doctors</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#appointments">Appointments</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#health-tips">Health Tips</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <a href="tel:+919876543210" class="btn btn-call-now" aria-label="Call Now">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                    <a href="#appointments" class="btn btn-primary" aria-label="Book Appointment">Book Appointment</a>
+                </div>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Your Health, Our Priority</h1>
+            <p class="hero-subtitle">Compassionate and advanced medical care in the heart of Agra.</p>
+            <div class="hero-cta">
+                <a href="#appointments" class="btn btn-primary btn-lg">Schedule an Appointment</a>
+                <a href="#services" class="btn btn-secondary">Our Services</a>
+            </div>
+        </div>
+        <div class="hero-image-overlay"></div>
+        <video autoplay loop muted playsinline class="hero-background-video">
+            <source src="videos/hero-bg.mp4" type="video/mp4"> <!-- Ensure videos/hero-bg.mp4 exists -->
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section section-padding">
+        <div class="container">
+            <div class="about-content fade-in">
+                <h2 class="section-title">Welcome to GS Clinic</h2>
+                <p class="section-subtitle">Providing Excellence in Healthcare Since [Year]</p>
+                <p>GS Clinic, located in the historic city of Agra, is dedicated to providing comprehensive and compassionate healthcare services. We blend modern medical advancements with a patient-centric approach to ensure the best possible outcomes for our community.</p>
+                <p>Our state-of-the-art facility is equipped with advanced diagnostic and treatment technologies, manned by a team of highly qualified and experienced medical professionals committed to your well-being.</p>
+                <a href="#doctors" class="btn btn-secondary">Meet Our Doctors</a>
+            </div>
+            <div class="about-image fade-in-delay">
+                <img src="images/about-clinic.jpg" alt="GS Clinic Interior" loading="lazy"> <!-- Placeholder: images/about-clinic.jpg -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctor Profile Section -->
+    <section id="doctors" class="doctors-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Our Esteemed Doctors</h2>
+                <p class="section-subtitle">Meet our team of specialists.</p>
+            </div>
+            <div class="doctor-grid">
+                <div class="doctor-card glassmorphism-card fade-in">
+                    <img src="images/doctor-1.jpg" alt="Dr. Priya Sharma" loading="lazy"> <!-- Placeholder: images/doctor-1.jpg -->
+                    <div class="doctor-info">
+                        <h3>Dr. Priya Sharma</h3>
+                        <p>Cardiologist</p>
+                        <span><i class="fas fa-star"></i> 4.9</span>
+                        <a href="#appointments" class="btn btn-primary-outline btn-sm">Book Appointment</a>
+                    </div>
+                </div>
+                <div class="doctor-card glassmorphism-card fade-in-delay">
+                    <img src="images/doctor-2.jpg" alt="Dr. Rahul Verma" loading="lazy"> <!-- Placeholder: images/doctor-2.jpg -->
+                    <div class="doctor-info">
+                        <h3>Dr. Rahul Verma</h3>
+                        <p>Dermatologist</p>
+                        <span><i class="fas fa-star"></i> 4.8</span>
+                        <a href="#appointments" class="btn btn-primary-outline btn-sm">Book Appointment</a>
+                    </div>
+                </div>
+                <div class="doctor-card glassmorphism-card fade-in-delay-2">
+                    <img src="images/doctor-3.jpg" alt="Dr. Aisha Khan" loading="lazy"> <!-- Placeholder: images/doctor-3.jpg -->
+                    <div class="doctor-info">
+                        <h3>Dr. Aisha Khan</h3>
+                        <p>Pediatrician</p>
+                        <span><i class="fas fa-star"></i> 4.7</span>
+                        <a href="#appointments" class="btn btn-primary-outline btn-sm">Book Appointment</a>
+                    </div>
+                </div>
+                <!-- Add more doctor cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">Comprehensive care for your entire family.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-item glassmorphism-card fade-in">
+                    <i class="fas fa-heartbeat service-icon"></i>
+                    <h3>Cardiology</h3>
+                    <p>Advanced diagnosis and treatment for heart conditions.</p>
+                </div>
+                <div class="service-item glassmorphism-card fade-in-delay">
+                    <i class="fas fa-cut service-icon"></i>
+                    <h3>Dermatology</h3>
+                    <p>Expert care for skin health and cosmetic treatments.</p>
+                </div>
+                <div class="service-item glassmorphism-card fade-in-delay-2">
+                    <i class="fas fa-child service-icon"></i>
+                    <h3>Pediatrics</h3>
+                    <p>Specialized care for infants, children, and adolescents.</p>
+                </div>
+                <div class="service-item glassmorphism-card fade-in-delay-3">
+                    <i class="fas fa-lungs service-icon"></i>
+                    <h3>Pulmonology</h3>
+                    <p>Treatment for respiratory diseases and conditions.</p>
+                </div>
+                <div class="service-item glassmorphism-card fade-in-delay-4">
+                    <i class="fas fa-bone service-icon"></i>
+                    <h3>Orthopedics</h3>
+                    <p>Diagnosis and surgical treatment for bone and joint issues.</p>
+                </div>
+                <div class="service-item glassmorphism-card fade-in-delay-5">
+                    <i class="fas fa-stethoscope service-icon"></i>
+                    <h3>General Medicine</h3>
+                    <p>Routine check-ups and treatment for common ailments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Booking Section -->
+    <section id="appointments" class="appointment-section section-padding bg-gradient">
+        <div class="container">
+            <div class="appointment-content fade-in">
+                <h2 class="section-title">Book Your Appointment</h2>
+                <p class="section-subtitle">Easily schedule your visit with our specialists.</p>
+                <form id="appointment-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required aria-label="Your Name">
+                        <input type="email" id="email" placeholder="Your Email" required aria-label="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" id="phone" placeholder="Your Phone Number (e.g., +91 9876543210)" required aria-label="Your Phone Number">
+                        <input type="text" id="date" placeholder="Preferred Date (e.g., YYYY-MM-DD)" required aria-label="Preferred Date" onfocus="(this.type='date')" onblur="(this.type='text')">
+                    </div>
+                    <div class="form-group">
+                        <select id="doctor" required aria-label="Select Doctor">
+                            <option value="" disabled selected>Select Doctor</option>
+                            <option value="Dr. Priya Sharma">Dr. Priya Sharma (Cardiologist)</option>
+                            <option value="Dr. Rahul Verma">Dr. Rahul Verma (Dermatologist)</option>
+                            <option value="Dr. Aisha Khan">Dr. Aisha Khan (Pediatrician)</option>
+                            {/* Add more doctor options */}
+                        </select>
+                        <select id="service" required aria-label="Select Service">
+                            <option value="" disabled selected>Select Service</option>
+                            <option value="Cardiology">Cardiology</option>
+                            <option value="Dermatology">Dermatology</option>
+                            <option value="Pediatrics">Pediatrics</option>
+                            <option value="General Medicine">General Medicine</option>
+                            {/* Add more service options */}
+                        </select>
+                    </div>
+                    <textarea id="message" placeholder="Your Message (Optional)" rows="4" aria-label="Your Message"></textarea>
+                    <button type="submit" class="btn btn-primary btn-lg">Request Appointment</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Patient Reviews Section -->
+    <section id="reviews" class="reviews-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">What Our Patients Say</h2>
+                <p class="section-subtitle">Hear from our happy patients.</p>
+            </div>
+            <div class="review-slider">
+                <div class="review-card glassmorphism-card fade-in">
+                    <img src="images/patient-1.jpg" alt="Patient Avatar 1" class="patient-avatar" loading="lazy"> <!-- Placeholder: images/patient-1.jpg -->
+                    <p>"Dr. Sharma is an excellent cardiologist. Her clear explanations and compassionate care made me feel at ease. Highly recommended!"</p>
+                    <div class="patient-info">
+                        <h4>Priya Singh</h4>
+                        <span>Agra</span>
+                    </div>
+                </div>
+                <div class="review-card glassmorphism-card fade-in-delay">
+                    <img src="images/patient-2.jpg" alt="Patient Avatar 2" class="patient-avatar" loading="lazy"> <!-- Placeholder: images/patient-2.jpg -->
+                    <p>"The clinic is very modern and clean. The staff were friendly and efficient. My issue was resolved quickly."</p>
+                    <div class="patient-info">
+                        <h4>Amit Kumar</h4>
+                        <span>Agra</span>
+                    </div>
+                </div>
+                <div class="review-card glassmorphism-card fade-in-delay-2">
+                    <img src="images/patient-3.jpg" alt="Patient Avatar 3" class="patient-avatar" loading="lazy"> <!-- Placeholder: images/patient-3.jpg -->
+                    <p>"Dr. Verma's expertise in dermatology is outstanding. I saw significant improvement in my skin condition after just a few visits."</p>
+                    <div class="patient-info">
+                        <h4>Sneha Gupta</h4>
+                        <span>Agra</span>
+                    </div>
+                </div>
+                <!-- Add more review cards -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Clinic Gallery</h2>
+                <p class="section-subtitle">A glimpse inside our facility.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in">
+                    <img src="images/gallery-1.jpg" alt="Clinic Gallery Image 1" loading="lazy"> <!-- Placeholder: images/gallery-1.jpg -->
+                    <div class="gallery-overlay"></div>
+                </div>
+                <div class="gallery-item fade-in-delay">
+                    <img src="images/gallery-2.jpg" alt="Clinic Gallery Image 2" loading="lazy"> <!-- Placeholder: images/gallery-2.jpg -->
+                    <div class="gallery-overlay"></div>
+                </div>
+                <div class="gallery-item fade-in-delay-2">
+                    <img src="images/gallery-3.jpg" alt="Clinic Gallery Image 3" loading="lazy"> <!-- Placeholder: images/gallery-3.jpg -->
+                    <div class="gallery-overlay"></div>
+                </div>
+                <div class="gallery-item fade-in-delay-3">
+                    <img src="images/gallery-4.jpg" alt="Clinic Gallery Image 4" loading="lazy"> <!-- Placeholder: images/gallery-4.jpg -->
+                    <div class="gallery-overlay"></div>
+                </div>
+                <div class="gallery-item fade-in-delay-4">
+                    <img src="images/gallery-5.jpg" alt="Clinic Gallery Image 5" loading="lazy"> <!-- Placeholder: images/gallery-5.jpg -->
+                    <div class="gallery-overlay"></div>
+                </div>
+                <div class="gallery-item fade-in-delay-5">
+                    <img src="images/gallery-6.jpg" alt="Clinic Gallery Image 6" loading="lazy"> <!-- Placeholder: images/gallery-6.jpg -->
+                    <div class="gallery-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Health Tips Section -->
+    <section id="health-tips" class="health-tips-section section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Health Tips</h2>
+                <p class="section-subtitle">Stay informed and stay healthy.</p>
+            </div>
+            <div class="tips-grid">
+                <div class="tip-card glassmorphism-card fade-in">
+                    <img src="images/tip-1.jpg" alt="Health Tip 1" loading="lazy"> <!-- Placeholder: images/tip-1.jpg -->
+                    <h3>Importance of Regular Check-ups</h3>
+                    <p>Don't wait for symptoms. Regular check-ups can help detect potential health issues early...</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="tip-card glassmorphism-card fade-in-delay">
+                    <img src="images/tip-2.jpg" alt="Health Tip 2" loading="lazy"> <!-- Placeholder: images/tip-2.jpg -->
+                    <h3>Healthy Eating Habits</h3>
+                    <p>Fuel your body with nutritious foods. Learn about balanced diets for optimal health...</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="tip-card glassmorphism-card fade-in-delay-2">
+                    <img src="images/tip-3.jpg" alt="Health Tip 3" loading="lazy"> <!-- Placeholder: images/tip-3.jpg -->
+                    <h3>Managing Stress Effectively</h3>
+                    <p>Discover techniques to manage stress and improve your mental well-being...</p>
+                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">Get answers to common queries.</p>
+            </div>
+            <div class="faq-accordion">
+                <div class="faq-item fade-in">
+                    <button class="faq-question">What are your clinic hours?<i class="fas fa-chevron-down arrow"></i></button>
+                    <div class="faq-answer">
+                        <p>We are open Monday to Saturday, from 9:00 AM to 8:00 PM. We are closed on Sundays and public holidays.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in-delay">
+                    <button class="faq-question">How can I book an appointment?<i class="fas fa-chevron-down arrow"></i></button>
+                    <div class="faq-answer">
+                        <p>You can book an appointment by filling out the form on our website, calling us at +91 9876543210, or sending us a WhatsApp message.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in-delay-2">
+                    <button class="faq-question">Do you accept walk-in patients?<i class="fas fa-chevron-down arrow"></i></button>
+                    <div class="faq-answer">
+                        <p>While we prioritize appointments, we do accept walk-in patients based on doctor availability. It's always best to call ahead or book an appointment.</p>
+                    </div>
+                </div>
+                <div class="faq-item fade-in-delay-3">
+                    <button class="faq-question">What services do you offer?<i class="fas fa-chevron-down arrow"></i></button>
+                    <div class="faq-answer">
+                        <p>We offer a wide range of services including Cardiology, Dermatology, Pediatrics, Pulmonology, Orthopedics, and General Medicine. Please visit our Services section for a full list.</p>
+                    </div>
+                </div>
+                {/* Add more FAQ items */}
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Map Section -->
+    <section id="location" class="location-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Find Us</h2>
+                <p class="section-subtitle">Visit our clinic at the heart of Agra.</p>
+            </div>
+            <div class="map-container fade-in">
+                <!-- Placeholder for Google Map -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3649.9808934555864!2d78.00000000000001!3d27.1775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397471b2e3b3a3a3%3A0x1234567890abcdef!2sAgra%2C%20Uttar%20Pradesh%2C%20India!5e0!3m2!1sen!2sin!4v1678888888888!5m2!1sen!2sin"
+                    width="100%"
+                    height="450"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Google Map of GS Clinic Agra"
+                ></iframe>
+                <div class="map-overlay"></div>
+            </div>
+            <div class="clinic-details text-center fade-in-delay">
+                <h3>GS Clinic</h3>
+                <p>123, Medical Lane, Near Taj Mahal, Agra, Uttar Pradesh, India</p>
+                <p><strong>Timing:</strong> Monday - Saturday, 9:00 AM - 8:00 PM</p>
+                <p><strong>Phone/WhatsApp:</strong> <a href="tel:+919876543210" aria-label="Call us">+91 9876543210</a></p>
+                <p><strong>Email:</strong> <a href="mailto:info@gsclinicagra.com" aria-label="Email us">info@gsclinicagra.com</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating AI Chatbot -->
+    <div id="chat-widget">
+        <div id="chat-header">
+            <img src="images/ai-icon.png" alt="GS Clinic AI Assistant Icon" loading="lazy"> <!-- Placeholder: images/ai-icon.png -->
+            <span>GS Clinic AI Assistant</span>
+            <button id="close-chat"><i class="fas fa-times"></i></button>
+        </div>
+        <div id="chat-messages">
+            <div class="message bot-message">
+                Hello! I'm your GS Clinic AI Assistant. How can I help you today?
+            </div>
+            {/* Messages will be appended here by script.js */}
+        </div>
+        <div id="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Ask about timing, location, services..." aria-label="Chat input">
+            <button id="send-chat"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+    <button id="chat-toggle-button" aria-label="Open Chatbot"><i class="fas fa-comment-dots"></i></button>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-widget about-widget">
+                    <img src="images/logo-footer.png" alt="GS Clinic Logo Footer" loading="lazy"> <!-- Placeholder: images/logo-footer.png -->
+                    <p>GS Clinic is dedicated to providing high-quality healthcare services with a patient-first approach. Serving Agra with expertise and compassion.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-widget links-widget">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#doctors">Doctors</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#appointments">Appointments</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget contact-widget">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123, Medical Lane, Near Taj Mahal, Agra, Uttar Pradesh, India</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+919876543210">+91 9876543210</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:info@gsclinicagra.com">info@gsclinicagra.com</a></p>
+                    <p><i class="fas fa-clock"></i> Mon - Sat: 9:00 AM - 8:00 PM</p>
+                </div>
+                <div class="footer-widget newsletter-widget">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for health tips and clinic updates.</p>
+                    <form id="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required aria-label="Newsletter email">
+                        <button type="submit" class="btn btn-primary btn-sm">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 GS Clinic. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/+919876543210?text=Hello%20GS%20Clinic%2C%20I%20need%20an%20appointment." class="whatsapp-float-btn" target="_blank" aria-label="WhatsApp Us">
+        <i class="fab fa-whatsapp whatsapp-icon"></i>
+    </a>
+
+    <!-- Call Now Button -->
+    <a href="tel:+919876543210" class="call-now-float-btn" aria-label="Call Now">
+        <i class="fas fa-phone phone-icon"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
